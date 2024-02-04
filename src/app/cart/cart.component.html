@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div class="d-flex justify-content-center align-items-center">
+  <img
+    class="w-50"
+    src="https://www.babyday.in/static/media/cart-empty.27846abe.gif"
+    alt=""
+  />
+</div>
+<h4 class="text-center">Your Cart is Empty</h4>
+<p class="text-center mb-5"><a href="">Add to Cart</a></p>
+
+<!-- Conditionally render -->
+
+<div class="row m-2 mb-4">
+  <h3 class="text-center mb-4">Cart</h3>
+
+  <div
+    class="col-md-6 d-flex justify-content-center justify-content-center flex-column table-responsive"
+  >
+    <table class="table shadow border">
+      <thead>
+        <tr class="fw-bolder">
+          <th>#</th>
+          <th>Product Name</th>
+          <th>Image</th>
+          <th>Quantity</th>
+          <th>Price(₹)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><img src="" style="width: 100px" alt="" /></td>
+          <td>
+            <div class="d-flex">
+              <button class="btn fw-bolder fs-3">-</button>
+              <input
+                type="num"
+                class="form-control text-center"
+                value="1"
+                style="max-width: 3rem"
+                readonly
+              />
+              <button class="btn fw-bolder fs-4">+</button>
+            </div>
+          </td>
+          <td>₹</td>
+          <td>
+            <Button variant="outline-danger" class="btn btn-outline-danger"
+              ><i class="fa-solid fa-trash"></i
+            ></Button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div
+    class="col-md-5 d-flex justify-content-center justify-content-center flex-column"
+  >
+    <div class="border shadow p-5 rounded">
+      <h3 class="text-primary text-center mb-5" style="overflow-y: hidden">
+        <b>Cart Summary</b>
+      </h3>
+      <h5 style="overflow-y: hidden">
+        Total Number of Products:
+        <span class="text-success fw-border fs-2"><b> </b></span>
+      </h5>
+      <h5 style="overflow-y: hidden">
+        Price: <span class="text-success fw-border fs-2"> <b> ₹ </b></span>
+      </h5>
+      <button class="btn btn-outline-primary w-100 mt-5 rounded">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+</div>
